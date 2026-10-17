@@ -12,22 +12,22 @@ namespace Tyuiu.MoiseevaVA.Sprint2.Task5.V2.Lib
                 case 1:
                 case 2:
                 case 12:
-                    res = "Зима";
+                    res = "зима";
                     break;
                 case 3:
                 case 4:
                 case 5:
-                    res = "Весна";
+                    res = "весна";
                     break;
                 case 6:
                 case 7:
                 case 8:
-                    res = "Лето";
+                    res = "лето";
                     break;
                 case 9:
                 case 10:
                 case 11:
-                    res = "Осень";
+                    res = "осень";
                     break;
                 default:
                     throw new ArgumentException($"Нет такого месяцв Значение {value}");
