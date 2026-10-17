@@ -14,9 +14,10 @@ namespace Tyuiu.MoiseevaVA.Sprint2.Task4.V28.Lib
             }
             else
             {
-                double chislitel = Math.Pow(2,x) - Math.Pow(Math.Cos(y), 2) + 12;
+                double chislitel = Math.Pow(2, x) - Math.Pow(Math.Cos(y), 2) + 12;
 
-                double znamenatel = (y * y) - Math.Pow(Math.Sin(x), 2) + 9;
+                // Пробуем вариант sin(x^2), как написано в задании
+                double znamenatel = (y * y) - Math.Sin(x * x) + 9;
 
                 z = chislitel / znamenatel;
             }
