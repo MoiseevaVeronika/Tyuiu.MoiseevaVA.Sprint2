@@ -6,21 +6,9 @@ namespace Tyuiu.MoiseevaVA.Sprint2.Task4.V28.Lib
     {
         public double Calculate(double x, double y)
         {
-            double z;
-
-            if (x < y * 2 - 10)
-            {
-                z = Math.Pow(1 + (y + 2) / (x * x), x);
-            }
-            else
-            {
-                double chislitel = 2*Math.Pow(x,2) - Math.Pow(Math.Cos(y), 2) + 12;
-
-                // Пробуем вариант sin(x^2), как написано в задании
-                double znamenatel = (y * y) - Math.Sin(x * x) + 9;
-
-                z = chislitel / znamenatel;
-            }
+            double z = (x < y * 2 - 10)
+                ? Math.Pow(1 + (y + 2) / (x * x), x)
+                : (2 * Math.Pow(x, 2) - Math.Pow(Math.Cos(y), 2) + 12) / (Math.Pow(y, 2) - Math.Sin(x * x) + 9);
 
             return Math.Round(z, 3);
         }
