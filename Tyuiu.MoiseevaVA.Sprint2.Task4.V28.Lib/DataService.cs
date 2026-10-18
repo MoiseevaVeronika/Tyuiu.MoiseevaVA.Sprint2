@@ -8,7 +8,7 @@ namespace Tyuiu.MoiseevaVA.Sprint2.Task4.V28.Lib
         {
             double z = (x < y * 2 - 10)
                 ? Math.Pow(1 + (y + 2) / (x * x), x)
-                : (2 * Math.Pow(x, 2) - Math.Pow(Math.Cos(y), 2) + 12) / (Math.Pow(y, 2) - Math.Sin(x * x) + 9);
+                : (2 * Math.Pow(x, 2) - Math.Cos(y*y) + 12) / ((y*y) - Math.Sin(x * x) + 9);
 
             return Math.Round(z, 3);
         }
