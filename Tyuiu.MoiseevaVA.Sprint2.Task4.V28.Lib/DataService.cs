@@ -14,7 +14,7 @@ namespace Tyuiu.MoiseevaVA.Sprint2.Task4.V28.Lib
             }
             else
             {
-                double chislitel = Math.Pow(2, x) - Math.Pow(Math.Cos(y), 2) + 12;
+                double chislitel = 2*Math.Pow(x,2) - Math.Pow(Math.Cos(y), 2) + 12;
 
                 // Пробуем вариант sin(x^2), как написано в задании
                 double znamenatel = (y * y) - Math.Sin(x * x) + 9;
